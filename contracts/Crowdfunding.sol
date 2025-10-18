@@ -19,6 +19,5 @@ contract Crowdfunding {
         goal = _goal;
         deadline = block.timestamp + (_durationInDays * 1 days);
         owner = msg.sender;
-        
     }
 }
