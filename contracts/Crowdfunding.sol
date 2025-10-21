@@ -45,8 +45,10 @@ contract Crowdfunding {
     ) public onlyOwner {
         require(_amount > 0, "Amount must be greater than 0.");
         tiers.push(Tier(_name, _amount, 0));
-
     }
+
+    function removeTier(uint256)
+    
 
     function withdraw() public onlyOwner {
         require(address(this).balance >= goal, "Goal has not been reached.");
