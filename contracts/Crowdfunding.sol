@@ -37,7 +37,9 @@ contract Crowdfunding {
     function fund(uint256 _tierIndex) public payable {
         require(block.timestamp < deadline, "Campaign has ended.");
         require(_tierIndex < tiers.length, "Invalid tier.");
-        require(msg.value == tiers[_tierIndex].amount);
+        require(msg.value == tiers[_tierIndex].amount, "Incorrect amount");
+
+        tiers[_tierIndex].backers++;
     }
 
     function addTier(
