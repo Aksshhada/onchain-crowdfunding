@@ -50,6 +50,25 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "backers",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "totalContribution",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "deadline",
 				"outputs": [
@@ -115,6 +134,30 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_backer",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_tierIndex",
+						"type": "uint256"
+					}
+				],
+				"name": "hasFundedTier",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "name",
 				"outputs": [
@@ -141,6 +184,13 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "refund",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -151,6 +201,19 @@
 				"name": "removeTier",
 				"outputs": [],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "state",
+				"outputs": [
+					{
+						"internalType": "enum Crowdfunding.CampaignState",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -218,11 +281,11 @@
 	},
 	"sources": {
 		"contracts/Crowdfunding.sol": {
-			"keccak256": "0x4ebb2af73ad09975114460272709b156cc14af020d2718efa9fdaded234285bc",
+			"keccak256": "0xbb46f78b14c84df5add9909a87b4cc24c1bd37ec490d97744ba92c53483f6b14",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://bfa2dd62f732aad1f80c0211a8e98318549b5cf324e36c587a3c00229d137d02",
-				"dweb:/ipfs/QmW37YhuDrwgXwfXCuMjpEfAe9AuWL8kku1sFznLEcSUUT"
+				"bzz-raw://ae21eba0c8986da95de35ea509acd992bfebdb833c4d6291b0c48e6b2d7811b4",
+				"dweb:/ipfs/QmRhKi1gCDcg3TBzUJ1ehcTKyJA6b8SPPZLn9KuULRfogb"
 			]
 		}
 	},
